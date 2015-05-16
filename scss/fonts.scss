@@ -1,0 +1,100 @@
+@font-face {
+    font-family : 'icon-neocog';
+    src         : url('fonts/icomoon.eot?a8r7u6');
+    src         : url('fonts/icomoon.eot?#iefixa8r7u6') format('embedded-opentype'),
+    url('fonts/icomoon.woff?a8r7u6') format('woff'),
+    url('fonts/icomoon.ttf?a8r7u6') format('truetype'),
+    url('fonts/icomoon.svg?a8r7u6#neocog') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family             : 'icon-neocog';
+    speak                   : none;
+    font-style              : normal;
+    font-weight             : normal;
+    font-variant            : normal;
+    text-transform          : none;
+    line-height             : 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.icon-iconoption:before {
+    content : "\e600";
+}
+
+.icon-iconadmin:before {
+    content : "\e601";
+}
+
+.icon-iconhome:before {
+    content : "\e602";
+}
+
+.icon-icone:before {
+    content : "\e603";
+}
+
+.icon-iconpeople:before {
+    content : "\e604";
+}
+
+.icon-icondone:before {
+    content : "\e605";
+}
+
+.icon-icontrash:before {
+    content : "\e606";
+}
+
+.icon-iconsearch:before {
+    content : "\e607";
+}
+
+.icon-iconplus:before {
+    content : "\e608";
+}
+
+.icon-iconarrow:before {
+    content : "\e609";
+}
+
+.icon-iconsettings:before {
+    content : "\e60a";
+}
+
+.icon-iconcomments:before {
+    content : "\e60b";
+}
+
+.icon-icondocuments:before {
+    content : "\e60c";
+}
+
+.icon-iconsummary:before {
+    content : "\e60d";
+}
+
+.icon-iconsecurity:before {
+    content : "\e60e";
+}
+
+.icon-icondetails:before {
+    content : "\e60f";
+}
+
+.icon-iconfinance:before {
+    content : "\e610";
+}
+
+.icon-iconmuseum:before {
+    content : "\e611";
+}
+
+.icon-cross:before {
+    content : "\ea0f";
+}

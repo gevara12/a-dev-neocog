@@ -1,0 +1,171 @@
+* {
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+    @include box-sizing(border-box);
+    margin                  : 0;
+    padding                 : 0;
+    &:before, &:after {
+        @include box-sizing(border-box);
+    }
+}
+
+html {
+    min-height : 635px;
+}
+
+html, body { height : 100%; }
+
+body {
+    position  : relative;
+    min-width : 1024px;
+    font      : 500 13px 'Roboto', sans-serif;
+    &.personal {
+        header {
+            padding-left  : 23px;
+            height        : 140px;
+            border-bottom : none;
+        }
+        article {
+            height   : 100%;
+            overflow : hidden;
+            /*.content {
+                height : calc(100% - 140px);
+                .tab-content {
+                    height : calc(100% - 90px);
+                }
+            }*/
+        }
+    }
+    &.menu-close {
+        aside, article {
+            //            @include transition(all 0.3s linear);
+        }
+        aside {
+            width : 55px;
+            @include clearfix();
+            .aside-inner { width : 70px; }
+            .state-menu {
+                em { @include rotate(180deg); }
+            }
+            footer {
+                background : none;
+                left       : -200px;
+                .settings {
+                    padding : 17px 10px 17px 17px;
+                    .appear-block {
+                        bottom     : 55px;
+                        padding    : 13px;
+                        width      : 55px;
+                        height     : 93px;
+                        left       : auto;
+                        right      : 0;
+                        text-align : center;
+                        &:before { right : 20px; }
+                        span { display : none; }
+                        .options {
+                            display       : inline-block;
+                            margin-bottom : 7px;
+                        }
+                        .admins { float : none; }
+                    }
+                }
+
+            }
+        }
+        article { padding-left : 55px; }
+
+        .main-menu {
+            ul {
+                > li {
+                    &:first-child {
+                        border-bottom : none;
+                        a {
+                            padding-left : 13px;
+                            height       : 72px;
+                        }
+                    }
+                    a {
+                        height       : 45px;
+                        padding-left : 13px;
+                    }
+                }
+                li {
+                    width         : 55px;
+                    border-bottom : 1px solid transparent;
+                    a {
+                        span { color : transparent; }
+                    }
+                    li {
+                        float : none;
+                        width : auto;
+                        a {
+                            width : auto;
+                            span { color : $white; }
+                        }
+                        &:first-child {
+                            a {
+                                padding-top : 0;
+                                height      : 45px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .user-details { opacity : 0; }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin         : 0;
+    text-transform : uppercase;
+}
+
+ul {
+    padding : 0;
+    margin  : 0;
+    li { list-style : none; }
+}
+
+a {
+    text-decoration : none;
+    @include transition(all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86));
+    &:hover, &:focus {
+        text-decoration : none;
+        outline         : none;
+    }
+}
+
+address {
+    margin      : 0;
+    line-height : 1em;
+}
+
+.wrap { overflow : hidden; }
+
+.mt60px { margin-top : 60px; }
+
+.mb40px { margin-bottom : 40px !important; }
+
+.pl0px { padding-left : 0 !important; }
+
+.pr0px { padding-right : 0 !important; }
+
+mark {
+    background : none;
+    color      : #FF0000;
+}
+
+input, textarea {
+    padding       : 2px;
+    border        : 1px solid $primary-color;
+    border-radius : 3px;
+    @include transition(all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86));
+    @include placeholder {
+        color : $primary-color;
+    }
+    &:focus {
+        border  : 1px solid $primary-color-hover;
+        outline : none;
+    }
+}

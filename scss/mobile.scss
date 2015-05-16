@@ -1,0 +1,90 @@
+@media only screen and (max-height : 655px) {
+    html, body{
+        height : auto;
+    }
+    aside { position : absolute; }
+    .action-btns{
+        position: relative;
+        text-align: right;
+        float: right;
+        margin-top: 15px;
+    }
+    .cancel, .save{
+        margin-bottom : 15px;
+    }
+}
+
+@media only screen and (max-width : 1215px) {
+    .tab-content form.wider-form {
+        .form-row > div {
+            margin-left : 20px;
+        }
+        .col-480 { width: 40%; }
+    }
+}
+
+@media only screen and (max-width : 1170px) {
+    .tabs{
+        li{
+            a{
+                &:link, &:visited{ padding: 0 14px 13px; }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 1080px) {
+    .tab-content .form-group:last-child {
+        width : 37%;
+    }
+    .user-list {
+        .user-item {
+            .user-info { width : 55%; }
+            .security, .summary, .electron, .utility {
+                width : 10%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+}
+
+@media only screen and (max-width : 480px) {
+    table, thead, tbody, th, td, tr {
+        display : block;
+    }
+    thead tr {
+        position : absolute;
+        top      : -9999px;
+        left     : -9999px;
+    }
+    tr { border : 1px solid #ccc; }
+
+    td {
+        border        : none;
+        border-bottom : 1px solid #eee;
+        position      : relative;
+        padding-left  : 50%;
+        &:before {
+            //position: absolute;
+            //top: 6px;
+            //left: 6px;
+            display     : block;
+            width       : 100%;
+            white-space : nowrap;
+            padding     : 5px 0 5px 10px;
+            background  : #3E66A8;
+            color       : white;
+        }
+        &:nth-of-type(1):before { content : "Item"; }
+        &:nth-of-type(2):before { content : "Item Details"; }
+        &:nth-of-type(3):before { content : "Unit"; }
+        &:nth-of-type(4):before { content : "Unit Price"; }
+        &:nth-of-type(5):before { content : "Quantity"; }
+        &:nth-of-type(6):before { content : "Total"; }
+    }
+}
+
+@media only screen and (max-width : 320px) {
+}
